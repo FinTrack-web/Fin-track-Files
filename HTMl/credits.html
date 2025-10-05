@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits - FinTrack</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.5s ease;
+            overflow-x: hidden;
+        }
+        .title-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .vanta-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: -1;
+        }
+        .credits-card {
+            background-color: rgba(31, 41, 55, 0.7);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(75, 85, 99, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-blue-900 text-white">
+    <div id="vanta-bg"></div>
+    <header class="fixed top-0 left-0 right-0 z-50 p-4 bg-gradient-to-b from-blue-900/80 to-transparent backdrop-blur-sm">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="fintrack1.jpg" alt="FinTrack Logo" class="h-10 rounded-lg">
+                <span class="text-xl font-bold title-font">FinTrack</span>
+            </a>
+            <div class="hidden md:flex space-x-6 title-font text-lg">
+                <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Home</a>
+                <a href="Map.html" class="hover:text-blue-400 transition-colors duration-300">Map</a>
+                <a href="about.html" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                <a href="faq.html" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
+                <a href="donate.html" class="hover:text-blue-400 transition-colors duration-300">Donate</a>
+                <a href="credits.html" class="hover:text-blue-400 transition-colors duration-300">Credits</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 right-0 bg-blue-900/90 backdrop-blur-sm z-40 p-6 pt-20 transition-transform transform -translate-y-full md:hidden">
+        <nav class="flex flex-col space-y-4 text-center title-font text-xl">
+            <a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Home</a>
+            <a href="Map.html" class="hover:text-blue-400 transition-colors duration-300">Map</a>
+            <a href="about.html" class="hover:text-blue-400 transition-colors duration-300">About</a>
+            <a href="faq.html" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
+            <a href="donate.html" class="hover:text-blue-400 transition-colors duration-300">Donate</a>
+        </nav>
+    </div>
+
+    <main class="container mx-auto max-w-4xl p-6 pt-24 min-h-screen relative z-10">
+        <section class="text-center py-16" data-aos="fade-up">
+            <h1 class="text-5xl md:text-6xl font-bold title-font text-white">Credits & Acknowledgments</h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">We thank the following organizations and individuals for their contributions to this project.</p>
+        </section>
+
+        <section class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="credits-card" data-aos="fade-up">
+                    <h3 class="text-3xl font-bold title-font text-blue-300 mb-4">Content & Research</h3>
+                    <div class="mt-4 pl-4 border-l-2 border-blue-400">
+                        <h4 class="text-xl font-bold title-font text-gray-100 mb-2">Sources</h4>
+                        <p class="text-gray-300">
+                            Empty
+                        </p>
+                    </div>
+                </div>
+                <div class="credits-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-3xl font-bold title-font text-blue-300 mb-4">Technology & Design</h3>
+                    <div class="mt-4 pl-4 border-l-2 border-blue-400">
+                        <h4 class="text-xl font-bold title-font text-gray-100 mb-2">External Libraries</h4>
+                        <p class="text-gray-300">
+                            - Tailwind CSS<br>
+                            - Vanta.js (for the background effect)<br>
+                            - AOS (for scroll animations)<br>
+                            - Feather Icons (for the menu icon)<br>
+                            - Leaflet.js (for the map on Map.html)
+                        </p>
+                        <h4 class="text-xl font-bold title-font text-gray-100 mt-4 mb-2">Images</h4>
+                        <p class="mt-2 text-gray-300">
+                            - All images are sourced from Unsplash and are free for commercial use under the Unsplash License.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative z-10 w-full p-6 text-center text-white">
+        <p>&copy; 2025 FinTrack. All Rights Reserved. | <a href="credits.html" class="hover:text-blue-400">Credits</a></p>
+    </footer>
+
+    <script>
+        VANTA.WAVES({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x306EEB,
+            shininess: 20.00,
+            waveHeight: 25.00,
+            waveSpeed: 0.7,
+            waveCount: 5
+        });
+
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        feather.replace();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('transform');
+                mobileMenu.classList.toggle('-translate-y-full');
+            });
+        }
+    </script>
+</body>
+</html>
