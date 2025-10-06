@@ -27,3 +27,9 @@ This project utilizes Google Apps Script for backend processing and a Google She
 
 * **Published Google Sheet (Data Source):** The data collected by the tracker is added and publicly viewable here.
     $$\text{Sheet Link: } \text{[https://docs.google.com/spreadsheets/d/e/2PACX-1vQy-Q2I-iz1E5V7xNHvB5ELlTI0ubdrowZdlv-7erRsYnxEse8-XXyVVPKsn7dWRuyublul64f05qJi/pubhtml](https://docs.google.com/spreadsheets/d/e/2PACX-1vQy-Q2I-iz1E5V7xNHvB5ELlTI0ubdrowZdlv-7erRsYnxEse8-XXyVVPKsn7dWRuyublul64f05qJi/pubhtml)}$$
+
+###File Viewing 
+
+Some file viewings are not available in Github repository, please accomadate this by downoading the file.
+
+***
